@@ -1,4 +1,5 @@
 //  Brute force is that li hum even ko +1 treat karenge and odd ko -1 phir phir jaha se khade hai vaha se left ki taraf move karnge zero mila toh vaha tak subarray possible toh max ko update kar denge then left me move karne kya pata koi bada subaaray ho toh hume left most nikalna hai 
+import java.util.HashMap;
 
 class Solution {
 
@@ -123,6 +124,7 @@ class Solution {
 
     public int findLeftMostZero(int idx, int l, int r){
 
+        
         propagate(idx ,l , r);
 
         if( segMin[idx] >0 || segMax[idx] < 0) return -1;
@@ -136,6 +138,7 @@ class Solution {
         return findLeftMostZero(2*idx+2, mid+1,r);
 
     }
+    
 
 }
 
