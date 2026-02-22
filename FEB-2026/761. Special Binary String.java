@@ -31,4 +31,4 @@ class Solution {
 }
 
 //T.C -> O(nlogn) for sorting and O(n) for traversing the string so overall O(nlogn)
-//S.C -> O(n) for storing the list of special binary string and O(n) for recursion stack so overall O(n)
+//S.C -> O(n) for storing the list of special binary string and O(n) for recursion stack so overall O(n)868. Binary Gap
